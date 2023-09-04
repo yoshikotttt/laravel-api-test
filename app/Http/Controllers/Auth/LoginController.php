@@ -22,10 +22,10 @@ final class LoginController extends Controller
         $credentials = $request->only(['email', 'password']);
 
         // 認証開始
+        // true or false になる
         if (Auth::attempt($credentials)) {
+            // 現在認証されているユーザーの情報を取得する
             $user = Auth::user();
-
-
             
             $token = $user->createToken('MyAppToken')->plainTextToken;
 
