@@ -1,5 +1,14 @@
 <?php
 
+
+
+
+// RegisteredUserControllerがあるので使用しない
+
+
+
+
+
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
